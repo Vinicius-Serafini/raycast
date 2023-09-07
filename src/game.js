@@ -92,7 +92,7 @@ export function createGame() {
   });
   
   document.addEventListener("mousemove", function (event) {
-    player.angle += toRadians(event.movementX);
+    player.angle += toRadians(event.movementX * .5);
   });
 
   return new Game({
